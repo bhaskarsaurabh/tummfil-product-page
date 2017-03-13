@@ -1,0 +1,365 @@
+/*body, html{
+    margin: 0;
+    overflow: hidden;
+}
+html{
+    height: 100%;
+}*/
+body{
+    padding: 0;
+    position: relative;
+    height: 100%;
+    line-height: 1;
+    overflow-x: hidden;
+}
+.product-view{
+    position: absolute;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.product-view .logo-name{
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid blanchedalmond;*/
+}
+.product-view .logo-container{
+    position: relative;
+    /*background-color: grey;*/
+    height: 100%;
+}
+.product-view .logo{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 95px;
+    height: 90px;
+}
+.product-view .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.product-view .shop-name-container{
+    position: relative;
+    /*background-color: grey;*/
+    height: 100%;
+}
+.product-view .shop-name{
+    height: 45px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.product-view .shop-name p{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*media querie for hotel name*/
+@media (min-width: 100px) and (max-width: 400px){
+    .product-view .shop-name p{
+        line-height: 30px;
+    }
+}
+
+/*tabs css*/
+.product-view nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.product-view nav li {
+    display: inline-block;
+    margin: 0 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.product-view nav a {
+    display: block;
+    color: #285064;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.product-view nav a:hover {
+    color: #12242d;
+}
+.product-view nav span {
+    display: block;
+}
+.product-view nav li {
+    margin: 0;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+.product-view nav a {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #285064;
+}
+.product-view nav a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+.product-view nav span {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@media (min-width: 100px) and (max-width: 250px){
+    .product-view nav li {
+        margin: 1px 0 2px 0;
+    }
+}
+
+dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+.product-view table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.product-view a img {
+    border: none;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #505050;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+.product-view a {
+    text-decoration: none;
+    color: #285064;
+}
+
+.product-view a:hover {
+    color: #12242d;
+}
+
+/* clear floated divs */
+.product-view .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product-view #wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-view #main {
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+.product-view .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.product-view .food-order-container{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-top: 5px;
+}
+.product-view .food-container{
+    background-color: #ffffff;
+}
+.product-view food-container-image{
+
+}
+.product-view food-container-image img{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.product-view .veg-text{
+    display: inline-flex;
+}
+.product-view .veg-text p{
+    margin-top: 6px;
+    font-size: 1.2vw;
+    margin-left: 4px;
+    font-weight: bold; 
+}
+.product-view .order-container{
+    /*background-color: bisque;*/
+}
+.product-view .right{
+
+}
+.product-view .products{
+    /*height: 250px;*/
+    /*background-color: grey;*/
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    margin: 5px;
+    border: 0.5px solid lightgrey;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);
+    border-radius: 5px;
+}
+
+@media (min-width: 810px) and (max-width: 991px){
+    .product-view .products {
+        width: 32%;
+        height: 260px;
+    }
+}
+@media (min-width: 768px) and (max-width: 809px){
+    .product-view .products {
+        width: 31.5%;
+        height: 260px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .product-view .products {
+        width: 38%;
+        margin-left: 8%;
+    }
+}
+
+.product-view .order-in{
+    background-color: #ffffff;
+    padding-bottom: 5px;
+}
+.product-view .order-header{
+    padding: 10px;
+}
+.product-view .order-header p{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-family: 'Karla', sans-serif
+}
+.product-view .cart-item{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.product-view .cart-item-product p{
+
+}
+.product-view .cart-item-rupees p{
+    float: right;
+}
+.product-view .increase-decrease{
+    font-size: 22px;
+}
+.product-view .tax-vat{
+    font-size: 15px;
+}
+
+/*media querie for tabs*/
+@media (min-width: 300px) and (max-width: 991px){
+    .product-view .order-container {
+        display: none;
+    }
+}
+
+
+/*media queries for mobile*/
+@media (min-width: 300px) and (max-width: 740px){
+    .product-view .cart-item {
+        border-bottom:none;
+        padding: 10px;
+    }
+    .product-view .veg-text p {
+        margin-top: 4px;
+        font-size: 4.5vw;
+        margin-left: 4px;
+        font-weight: bold;
+    }
+    .product-view .cart-item-rupees p {
+        float: right;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    .product-view .veg-text {
+        margin-top: 3px;
+        font-size: 5vmin;
+        margin-left: 4px;
+        font-weight: bold
+    }
+    .product-view .cart-item-imcrease-decrease{
+        margin-bottom: 8px;
+    }
+    .product-view .item-rupees p {
+        float: right;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+}
+
+/*media queries for ipad*/
+@media (min-width: 765px) and (max-width: 1025px){
+    .product-view .cart-item {
+        border-bottom: none; 
+        padding: 10px;
+    }
+    .product-view .veg-text p {
+        font-size: 1.8vw;
+    }
+    .product-view .cart-item-rupees p {
+        margin-top: 5px;
+    }
+
+}
